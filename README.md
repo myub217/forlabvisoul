@@ -253,9 +253,9 @@ I wanted it to be nearly as feature-rich as popular blogging templates like [bea
 
 1. Clone the repo
 
-```bash
+\`\`\`bash
 npx degit 'timlrx/tailwind-nextjs-starter-blog'
-```
+\`\`\`
 
 2. Personalize `siteMetadata.js` (site related information)
 3. Modify the content security policy in `next.config.js` if you want to use
@@ -268,23 +268,23 @@ npx degit 'timlrx/tailwind-nextjs-starter-blog'
 
 ## Installation
 
-```bash
+\`\`\`bash
 yarn
-```
+\`\`\`
 
 Please note, that if you are using Windows, you may need to run:
 
-```bash
+\`\`\`bash
 $env:PWD = $(Get-Location).Path
-```
+\`\`\`
 
 ## Development
 
 First, run the development server:
 
-```bash
+\`\`\`bash
 yarn dev
-```
+\`\`\`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -333,7 +333,7 @@ Frontmatter follows [Hugo's standards](https://gohugo.io/content-management/fron
 
 Please refer to `contentlayer.config.ts` for an up to date list of supported fields. The following fields are supported:
 
-```
+\`\`\`
 title (required)
 date (required)
 tags (optional)
@@ -344,11 +344,11 @@ images (optional)
 authors (optional list which should correspond to the file names in `data/authors`. Uses `default` if none is specified)
 layout (optional list which should correspond to the file names in `data/layouts`)
 canonicalUrl (optional, canonical url for the post for SEO)
-```
+\`\`\`
 
 Here's an example of a post's frontmatter:
 
-```
+\`\`\`
 ---
 title: 'Introducing Tailwind Nexjs Starter Blog'
 date: '2021-01-12'
@@ -361,7 +361,7 @@ authors: ['default', 'sparrowhawk']
 layout: PostLayout
 canonicalUrl: https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog
 ---
-```
+\`\`\`
 
 ## Deploy
 
@@ -383,9 +383,9 @@ See [Next.js on Netlify](https://docs.netlify.com/integrations/frameworks/next-j
 
 Run:
 
-```sh
+\`\`\`sh
 $ EXPORT=1 UNOPTIMIZED=1 yarn build
-```
+\`\`\`
 
 Then, deploy the generated `out` folder or run `npx serve out` it locally.
 
